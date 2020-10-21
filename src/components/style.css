@@ -3,6 +3,10 @@
 @import url(https://realtechnerd.github.io/button.css/style.css);
 * {
   margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .b, .inc {

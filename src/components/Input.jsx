@@ -4,7 +4,9 @@ import firebase from "firebase";
 
 
 function Input() {
-    const [disp, setDisp] = useState(0);
+    
+    const [disp, setDisp] = useState();
+    const [load, setLoad] = useState(true);
     
     const db = firebase.database().ref("test");
 
@@ -13,6 +15,10 @@ function Input() {
             const numb = snapshot.val()['num'];
             setDisp(numb);
         });
+        if (disp === 0) {
+            return null;
+        }
+        setLoad(true);
     })
     
     function increment() {
@@ -29,6 +35,7 @@ function Input() {
         <div className="Card">
             <h1>{disp}</h1>
             <button 
+            tabindex="-1"
                 className="inc bxlg scale" 
                 onClick={increment}>Increment</button>
         </div>
