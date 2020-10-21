@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Manrope&display=swap");
+@import url(https://realtechnerd.github.io/button.css/style.css);
+@import url(https://realtechnerd.github.io/button.css/style.css);
+* {
+  margin: 0;
+}
+
+.b, .inc {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  border: transparent solid 1px;
+  border-radius: 100rem;
+  cursor: pointer;
+  font-family: Inter;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #333;
+  outline: none !important;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.bxlg {
+  padding: 17.5px;
+  font-size: 17.5pt;
+}
+
+.m, .Header, .Footer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.container, .MainContent, .Card {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.Header {
+  padding: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#00b09b), to(#96c93d));
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  border-radius: 1rem;
+  color: #333;
+  font-family: Manrope;
+  text-align: center;
+}
+
+.MainContent {
+  padding: 5px;
+  font-family: Inter;
+}
+
+@media only screen and (max-width: 600px) {
+  .container, .MainContent, .Card {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .Footer {
+    font-size: 10pt;
+  }
+}
+
+.Card {
+  padding: 15px;
+  border-radius: 1rem;
+  background-color: #eee;
+  text-align: center;
+}
+
+.inc {
+  background: -webkit-gradient(linear, left top, right top, from(#00b09b), to(#96c93d));
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  border: 0;
+}
+
+.inc:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#00b09b), to(#96c93d));
+  background: linear-gradient(to left, #00b09b, #96c93d);
+}
+
+.inc:active {
+  background: -webkit-gradient(linear, left top, right top, from(#00b09b), to(#96c93d));
+  background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+.Card h1 {
+  margin-bottom: 15px;
+  font-size: 50pt !important;
+  margin-top: 20px;
+}
+
+.Footer {
+  margin-top: 10px;
+  padding: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#00b09b), to(#96c93d));
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  border-radius: 1rem;
+  color: #333;
+  font-family: Manrope;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
